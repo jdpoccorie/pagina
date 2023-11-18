@@ -1,3 +1,30 @@
-li{
-    display: inline;
+ul li a {
+    text-decoration: none;
 }
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para mostrar el menú desplegable al pasar el ratón sobre el elemento "Tour" */
+li:hover .submenu {
+    display: block;
+}
+.rowPersonalizado{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.usuarioRegister{
+    padding-left: 30px;
+    padding-right: 30px;
+    display:flex;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
