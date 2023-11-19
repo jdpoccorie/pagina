@@ -1,0 +1,50 @@
+.bg-website {
+  background-color: #3A6F84;
+  color: white;
+}
+
+.separador {
+  width: 60px;
+  height: 2px;
+  background-color: #F2BA58;
+}
+
+.link-footer {
+  text-decoration: none;
+}
+
+.link-footer:hover {
+  text-decoration: underline;
+}
+
+.footer-socialmedia {
+  background-color: #256077;
+  color: white;
+}
+
+.link-socialmedia {
+  text-decoration: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-socialmedia:hover {
+  color: rgba(255, 255, 255, 0.682);
+}
+.icon-socialmedia {
+  width: 32px;
+  height: 32px;
+}
+
+.imagen-footer {
+  max-width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+
