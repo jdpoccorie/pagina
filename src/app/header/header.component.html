@@ -1,42 +1,60 @@
-<div class="container-fluid" style="border-bottom: 40px solid rgb(16, 36, 95);">
-    <!-- Contenido de tu contenedor -->
-  </div>
-<div class="container">
-    <div class="row rowPersonalizado">
-        <div class="col-3" style="margin-right: auto;">
-            <img src="../../assets/logoMachupicchu.svg" height="50px" alt="imagen de logo">
+<header class="position-relative">
+  <section class="menu-fijo container-fluid pb-3 pb-lg-0">
+    <section class="container d-flex justify-content-between pt-3">
+      <div class="d-flex justify-content-between branding">
+        <div>
+          <img src="../../assets/logoMachupicchu.svg" alt="">
         </div>
-        <div class="col-7" style="display: flex; justify-content: space-around;">
-            <ul style="list-style: none; padding: 0; margin: 0; display: flex; font-size: 20px;">
-                <li style="margin-right: 20px;">
-                    <a routerLink="/home">Home</a>
-                </li>
-                <li style="margin-right: 20px;">
-                    <a routerLink="/Tour">Tour</a>
-                    <ul class="submenu">
-                        <li routerLink="#">Cusco</li>
-                        <li routerLink="#">Arequipa</li>
-                        <li routerLink="#">Puno</li>
-                        <li routerLink="#">Lima</li>
-                    </ul>
-                </li>
-                <li style="margin-right: 20px;">
-                    <a routerLink="/paquetesT">Paquetes</a>
-                </li>
-                <li>
-                    <a routerLink="/Ofertas">Ofertas</a>
-                </li>
+        <button class="btn-menu d-lg-none" (click)="toggleMenu()">Menu</button>
+      </div>
+      <nav class="d-none d-lg-block nav justify-content-center menu-principal pt-3 ">
+        <ul class="list-unstyled">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">TOURS A MACHUPICCHU</a></li>
+          <li><a href="#">TOURS 1 DÍA</a></li>
+          <li class="has-submenu">
+            <span>PAQUETES</span>
+            <ul class="list-unstyled">
+              <li><a href="#">LA EMPRESA</a></li>
+              <li><a href="#">GALERIA DE FOTOS</a></li>
+              <li><a href="#">DEPARTAMENTO</a></li>
+              <li><a href="#">HABITACIONES</a></li>
+              <li><a href="#">HABITACIONES</a></li>
+              <li><a href="#">HABITACIONES</a></li>
             </ul>
-        </div>
-        <div class="col-2" style="margin-left: auto;">
-            <ul class="usuarioRegister">
-                <li style="margin-right: 20px;">
-                    <a routerLink="/login">Login</a>
-                </li>
-                <li>
-                    <a routerLink="/register">Register</a>
-                </li>
+          </li>
+          <li><a href="#">SOBRE NOSOTROS</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+
+  <section class="position-absolute w-100 top-100">
+    <section>
+      <nav class="menu-mobile-new nav-mobile" [ngClass]="{'abierto': isMenuOpen}">
+        <ul class="list-unstyled">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">TOURS A MACHUPICCHU</a></li>
+          <li><a href="#">TOURS 1 DÍA</a></li>
+          <li class="has-submenu">
+            <span class="btn-sobre">PAQUETES</span>
+            <ul class="list-unstyled">
+              <li><a href="#">LA EMPRESA</a></li>
+              <li><a href="#">GALERIA DE FOTOS</a></li>
+              <li><a href="#">DEPARTAMENTO</a></li>
+              <li><a href="#">HABITACIONES</a></li>
+              <li><a href="#">HABITACIONES</a></li>
+              <li><a href="#">HABITACIONES</a></li>
             </ul>
-        </div>
-    </div>
-</div>
+          </li>
+          <li><a href="#">SOBRE NOSOTROS</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+
+
+
+</header>
